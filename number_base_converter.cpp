@@ -2,6 +2,7 @@
 #include<locale.h>
 
 #define max 50
+
 void hex(int h);
 void octal(int e);
 void bin(int b);
@@ -12,12 +13,12 @@ int main() {
 	printf("---------------------------------\n");
 	printf("|       CONVERSOR DECIMAL       |\n");
 	printf("---------------------------------\n");
-	printf("|   OP«√O:  |        TIPO:      |\n");
+	printf("|   OP√á√ÉO:  |        TIPO:      |\n");
 	printf("|     1     |  PARA HEXADECIMAL.|\n");
 	printf("|     2     |  PARA OCTADECIMAL.|\n");
-	printf("|     3     |  PARA BIN¡RIO.    |\n");
+	printf("|     3     |  PARA BIN√ÅRIO.    |\n");
 	printf("---------------------------------\n");
-	printf("Escolha uma das opÁıes: ");
+	printf("Escolha uma das op√ß√µes: ");
 	scanf("%i", &op);
 	switch(op){
 		case 1:
@@ -39,7 +40,7 @@ int main() {
 			scanf("%i", &d);
 			printf("%i(dec) = ", d);
             bin(d);
-            printf("(bin·rio).");
+            printf("(bin√°rio).");
 			break;
 		default:
 			break;
