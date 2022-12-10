@@ -40,7 +40,7 @@ int main() {
 			scanf("%i", &d);
 			printf("%i(dec) = ", d);
             bin(d);
-            printf("(binário).");
+            printf("(bin).");
 			break;
 		default:
 			break;
@@ -49,7 +49,7 @@ int main() {
 }
 
 void hex(int h){
-	int q, r = 0, resto[max];
+	int r = 0, resto[max];
 	while(h >= 1){
 		resto[r] = h % 16;
 		h = h / 16;
