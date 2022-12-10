@@ -49,51 +49,51 @@ int main() {
 }
 
 void hex(int h){
-	int r = 0, resto[max];
+	int r = 0, mod[max];
 	while(h >= 1){
-		resto[r] = h % 16;
+		mod[r] = h % 16;
 		h = h / 16;
 		r++;
 	}
 	for(int i = (r - 1); i >= 0; i--){
-		if(resto[i] == 10){
+		if(mod[i] == 10){
 			printf("A");
-		} else if(resto[i] == 11){
+		} else if(mod[i] == 11){
 			printf("B");
-		} else if(resto[i] == 12){
+		} else if(mod[i] == 12){
 			printf("C");
-		} else if(resto[i] == 13){
+		} else if(mod[i] == 13){
 			printf("D");
-		} else if(resto[i] == 14){
+		} else if(mod[i] == 14){
 			printf("E");
-		} else if(resto[i] == 15){
+		} else if(mod[i] == 15){
 			printf("F");
 		} else {
-			printf("%i", resto[i]);
+			printf("%i", mod[i]);
 		}
 	}
 }
 
 void octal(int e){
-    int l = 0, resto[max];
+    int l = 0, mod[max];
 	while(e >= 1){
-		resto[l] = e % 8;
+		mod[l] = e % 8;
 		e = e / 8;
 		l++;
     	}
     for(int i = l - 1; i >= 0; i--){
-       	printf("%i", resto[i]);
+       	printf("%i", mod[i]);
    }
 }
 
 void bin(int b){
-   int s = 0, resto[max];
+   int s = 0, mod[max];
 	while(b >= 1){
-		resto[s] = b % 2;
+		mod[s] = b % 2;
 		b = b / 2;
 		s++;
 	}
    for(int i = s - 1; i >= 0; i--){
-	printf("%i", resto[i]);
+	printf("%i", mod[i]);
    }
 }
